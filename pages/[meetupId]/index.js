@@ -31,7 +31,7 @@ export const getStaticPaths = async () => {
     client.close();
 
     return{
-        fallback: false, //if route not match and fallback is false then 404
+        fallback: 'blocking', //if route not match and fallback is false then 404
         paths: meetups.map(meetup => ({ params: { meetupId: meetup._id.toString() }})),
     }
 }

@@ -10,7 +10,7 @@
   border-top-left-radius: 6px;
 }
 
-.image img {
+.image .inputImg {
   width: 100%;
   object-fit: cover;
 }
